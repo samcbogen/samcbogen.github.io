@@ -1,8 +1,9 @@
 body{
     width: auto;
+    color: skyblue;
 }
 a{
-    color: skyblue;
+    color: blue;
     text-decoration: none;
 }
 ol{
@@ -19,7 +20,7 @@ nav{
     padding: 10px; 
 }
 .options li:hover{
-    background-color: black;
+    background-color: red;
 }
 .home{
     position: absolute; 
