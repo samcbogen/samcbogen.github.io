@@ -63,7 +63,7 @@ footer{
     height:60px; 
 }
 .title{
-    float: left;
+    float: center;
     width: 50%;
     padding: 20px;
     padding-right: 10px;
