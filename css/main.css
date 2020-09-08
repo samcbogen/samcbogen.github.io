@@ -9,22 +9,22 @@ ol{
     list-style-type: none;
 }
 nav{
-    background-color: orange;
+    background-color: lightskyblue;
 }
-.option li, .option a, .option a:visited{
+.options li, .options a, .options a:visited{
     list-style-type: none;
     display: inline-block; 
     color: white; 
     margin: 0px; 
     padding: 10px; 
 }
-.option li:hover{
-    background-color: grey;
+.options li:hover{
+    background-color: black;
 }
 .homepage{
     position: absolute; 
     display: block; 
-    left: 8px;
+    left: 16px;
     text-decoration: none;
 }
 .selection{
