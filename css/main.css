@@ -1,64 +1,186 @@
-p {
-    /*background-color: white;*/
+body{
+    width: auto;
 }
-
-body {
-    /*color: red;*/
-    background-color: white;
-    width: 1000px; /* many units for width */
+a{
+    color: blue;
+    text-decoration: none;
 }
-
-h1 {
+ol{
+    list-style-type: none;
+}
+nav{
+    background-color: orange;
+}
+.option li, .option a, .option a:visited{
+    list-style-type: none;
+    display: inline-block; 
+    color: white; 
+    margin: 0px; 
+    padding: 10px; 
+}
+.option li:hover{
+    background-color: grey;
+}
+.homepage{
+    position: absolute; 
+    display: block; 
+    left: 8px;
+    text-decoration: none;
+}
+.selection{
+    text-align: right;
+}
+section{
     text-align: center;
 }
-
-ol {
-    padding: 0px;
-    margin: 0px;
+.box u{
+    border-style: solid;
+    border-color: black;
+    background-color: orange;
+}
+.pz:hover{
+    background-color: orange;
+}
+.hmc:hover{
+    background-color: yellow;
+}
+.cmc:hover{
+    background-color: red;
+}
+.button li{
+    border-style: solid;
+    border-color: black;
+    margin: 30px;
+}
+.button:hover{
+    color: white;
+}
+.coursework{
+    margin: auto;
+    width: 65%;
+}
+.technical{
+    float: left;
+}
+.technical p{
+    padding-right: 25px;
+}
+.technical li{
+    text-align: left;
+}
+.and{
+    margin-left: 175%;
+}
+.vl{ 
+    border-left: 3px solid orange;
+    height: 82px;
+    position: absolute;
+    left: 50%;
+    top: 160px;
+}
+.liberal_arts{
+    float: right;
+}
+.liberal_arts p{
+    padding-left: 20px;
+}
+.liberal_arts li{
+    text-align: left;
+}
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px; 
+}
+.sponsor{
+    float: right;
+}
+.column{
+    float: left;
+    width: 40%;
+    padding: 20px;
+    padding-right: 5px;
+    padding-left: 40px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.img_divide img{
+    float: left;
+    width: 28%;
+    padding-left: 200px;
+    position: relative; 
+    top: 0px;
+}
+.img_center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: auto;
+}
+.unconvinced{
+    text-align: left;
+}
+.logo{
+    margin: 3px;
 }
 
-li {
-    list-style-type: none;
+[class*="col-"]{
+    width: 100%;
+}
+@media only screen and (min-width: 768px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+.hvr-sweep-to-right{
     display: inline-block;
-    width: 21%;
-    background-color: black;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: orange;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active{
     color: white;
-    margin: 0px;
-    padding: 10px;
 }
-
-span.webpage{
-    color: #89703e;
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
-
-div.pdivclass {
-    color: red;
-}
-
-/* part after # is called the id */
-a#myid {
-    color: black;
-}
-
-/* menu is a class or "true class" */
-a.menu {
-    color: white;
-}
-
-/* :hover is a pseudo-class */
-li:hover {
-    background-color: cyan;
-    color: red;
-}
-
-/*
-lines 1-3 are a "CSS block"
-css_selector {
-    property: value;
-    property: value;
-    property: value;
-    property: value;
-}
-class/id attributes to set properties of only certain tags
-this is a comment and is ignored
-*/
