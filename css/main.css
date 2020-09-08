@@ -2,7 +2,7 @@ body{
     width: auto;
 }
 a{
-    color: blue;
+    color: skyblue;
     text-decoration: none;
 }
 ol{
@@ -21,13 +21,13 @@ nav{
 .options li:hover{
     background-color: black;
 }
-.homepage{
+.home{
     position: absolute; 
     display: block; 
     left: 16px;
     text-decoration: none;
 }
-.selection{
+.menuselection{
     text-align: right;
 }
 section{
@@ -96,12 +96,12 @@ footer{
 .sponsor{
     float: right;
 }
-.column{
+.title{
     float: left;
-    width: 40%;
+    width: 50%;
     padding: 20px;
-    padding-right: 5px;
-    padding-left: 40px;
+    padding-right: 10px;
+    padding-left: 50px;
 }
 img{
     max-width: 100%;
